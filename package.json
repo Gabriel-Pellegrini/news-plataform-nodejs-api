@@ -1,0 +1,26 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "Sera um portal de noticias",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "npm": "^6.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-Pellegrini/Alura.git"
+  },
+  "author": "Gabriel Pellegrini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriel-Pellegrini/Alura/issues"
+  },
+  "homepage": "https://github.com/Gabriel-Pellegrini/Alura#readme"
+}

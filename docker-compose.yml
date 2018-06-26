@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gabrielpellegrini/nodejs:8.11.2
+    command: nodemon app.js
+    
+    tty: true
+    stdin_open: true
+    container_name: node
+    ports:
+      - 3050:3000
+    volumes:
+      - .:/home/app/portal
+      - /home/app/portal/node_modules
+    networks: 
+      - default
+networks:
+  default:
+    external:
+      name: localNetwork
+
+
+
+    
