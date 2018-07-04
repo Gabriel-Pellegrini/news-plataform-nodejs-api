@@ -1,25 +1,15 @@
-var express = require ("express");
-var app = express();
-var port = 3000
+var app = require("./config/server");
+var port = 3000;
 
-app.set('view engine', 'ejs');
+//Página inicial para o app
+var routeHome= require("./app/routes/home")(app);
 
+//Sessões para noticias
+var routeNoticias= require("./app/routes/noticias")(app);
 
-app.get("/", function(req,res){
-	res.render("home/index")
-});
-
-app.get("/formulario_inclusao_noticia",function(req,res){
-	res.render ("admin/form_add_noticia")
-});
-
-app.get("/tecnologia",function(req,res){
-	res.render ("session/tecnologia")
-});
-
+// Inclusão de Noticias.
+var routeInclusao= require("./app/routes/form_inclusao_noticia")(app);
 
 app.listen(port,function(){
-	console.log('express app listening on ' + port + ' (3050 on Host)')
+	console.log('express app listening on ' + port + ' (3050 on Host)');
 });
-
-

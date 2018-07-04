@@ -14,4 +14,6 @@ RUN npm install -g nodemon
 
 RUN npm install express 
 
+RUN nṕm install mysql 
+
 
