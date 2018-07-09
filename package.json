@@ -4,6 +4,7 @@
   "description": "Sera um portal de noticias",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "consign": "^0.1.6",
     "ejs": "^2.5.7",
     "express": "^4.16.3",
