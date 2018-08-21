@@ -10,10 +10,12 @@ COPY . $HOME/portal
 
 RUN npm install npm
 
+RUN npm install consign
+
 RUN npm install -g nodemon
 
 RUN npm install express 
 
-RUN nṕm install mysql 
+RUN npm install mysql 
 
 
